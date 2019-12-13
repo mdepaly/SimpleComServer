@@ -1,0 +1,26 @@
+HKCR
+{
+	HelloFiveMinds.HelloFiveMinds.1 = s 'HelloFiveMinds class'
+	{
+		CLSID = s '{c7bec822-3a55-43c1-975c-ef9b6ad4074d}'
+	}
+	HelloFiveMinds.HelloFiveMinds = s 'HelloFiveMinds class'
+	{		
+		CurVer = s 'HelloFiveMinds.HelloFiveMinds.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {c7bec822-3a55-43c1-975c-ef9b6ad4074d} = s 'HelloFiveMinds class'
+		{
+			ProgID = s 'HelloFiveMinds.HelloFiveMinds.1'
+			VersionIndependentProgID = s 'HelloFiveMinds.HelloFiveMinds'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{a0d20991-ab27-4ee0-b089-62a40734915a}'
+			Version = s '1.0'
+		}
+	}
+}

@@ -1,0 +1,38 @@
+// SimpleComServer.idl: IDL-Quelle für SimpleComServer
+//
+
+// Diese Datei wird mit dem MIDL-Tool bearbeitet,
+// generieren die Typbibliothek (SimpleComServer.tlb) und den Marshallingcode.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(0e62cb80-1075-4637-af79-c19407ca58e9),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IHelloFiveMinds : IDispatch
+{
+  [id(1)] HRESULT Greet();
+  [id(2)] HRESULT Hello([in] BSTR name);
+};
+[
+	uuid(a0d20991-ab27-4ee0-b089-62a40734915a),
+	version(1.0),
+]
+library SimpleComServerLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(c7bec822-3a55-43c1-975c-ef9b6ad4074d)
+	]
+	coclass HelloFiveMinds
+	{
+		[default] interface IHelloFiveMinds;
+	};
+};
+
+import "shobjidl.idl";

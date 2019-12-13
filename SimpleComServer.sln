@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleComServer", "SimpleComServer\SimpleComServer.vcxproj", "{08B29455-A589-4BF7-836A-EBE7A2A46CB9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleComServerPS", "SimpleComServerPS\SimpleComServerPS.vcxproj", "{41BBA0C9-34C6-45A5-B449-43E61237533B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{08B29455-A589-4BF7-836A-EBE7A2A46CB9} = {08B29455-A589-4BF7-836A-EBE7A2A46CB9}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08B29455-A589-4BF7-836A-EBE7A2A46CB9}.Debug|x64.ActiveCfg = Debug|x64
+		{08B29455-A589-4BF7-836A-EBE7A2A46CB9}.Debug|x64.Build.0 = Debug|x64
+		{08B29455-A589-4BF7-836A-EBE7A2A46CB9}.Debug|x86.ActiveCfg = Debug|Win32
+		{08B29455-A589-4BF7-836A-EBE7A2A46CB9}.Debug|x86.Build.0 = Debug|Win32
+		{08B29455-A589-4BF7-836A-EBE7A2A46CB9}.Release|x64.ActiveCfg = Release|x64
+		{08B29455-A589-4BF7-836A-EBE7A2A46CB9}.Release|x64.Build.0 = Release|x64
+		{08B29455-A589-4BF7-836A-EBE7A2A46CB9}.Release|x86.ActiveCfg = Release|Win32
+		{08B29455-A589-4BF7-836A-EBE7A2A46CB9}.Release|x86.Build.0 = Release|Win32
+		{41BBA0C9-34C6-45A5-B449-43E61237533B}.Debug|x64.ActiveCfg = Debug|x64
+		{41BBA0C9-34C6-45A5-B449-43E61237533B}.Debug|x86.ActiveCfg = Debug|Win32
+		{41BBA0C9-34C6-45A5-B449-43E61237533B}.Release|x64.ActiveCfg = Release|x64
+		{41BBA0C9-34C6-45A5-B449-43E61237533B}.Release|x86.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC73C2D3-8205-4C64-A8A3-26273B2E5D67}
+	EndGlobalSection
+EndGlobal
